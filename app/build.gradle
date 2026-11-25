@@ -18,4 +18,28 @@ android {
         sourceCompatibility JavaVersion.VERSION_17
         targetCompatibility JavaVersion.VERSION_17
     }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+        }
+
+        release {
+            minifyEnabled false
+        }
+    }
+}
+
+dependencies {
+    // AndroidX Core
+    implementation 'androidx.core:core:1.15.0'
+
+    // AndroidX AppCompat
+    implementation 'androidx.appcompat:appcompat:1.7.0'
+
+    // AndroidX Activity
+    implementation 'androidx.activity:activity:1.10.1'
+
+    // Testing
+    testImplementation 'junit:junit:4.13.2'
 }
